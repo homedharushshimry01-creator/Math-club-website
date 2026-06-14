@@ -37,7 +37,7 @@ export type ReplyEntry = {
 };
 
 export const MAX_UPLOAD_BYTES = 100 * 1024 * 1024;
-const API_BASE = "/api";
+const API_BASE = "/__no_api__";
 
 const PAPERS_KEY = "aans_math_papers_v1";
 const SUBMISSIONS_KEY = "aans_math_submissions_v1";
