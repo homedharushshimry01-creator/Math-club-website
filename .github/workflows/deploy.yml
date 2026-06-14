@@ -29,6 +29,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Fix boot.js for GitHub Pages
+        run: |
+          printf 'async function loadApp() {\n  if (!document.querySelector("link[data-mathclub-static-style]")) {\n    const link = document.createElement("link");\n    link.rel = "stylesheet";\n    link.href = "./style.css";\n    link.dataset.mathclubStaticStyle = "true";\n    document.head.appendChild(link);\n  }\n  await import("./app.js");\n}\nloadApp();\n' > dist/boot.js
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
