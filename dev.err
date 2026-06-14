@@ -1,0 +1,12 @@
+Failed to resolve dependency: [36mreact[39m, present in client 'optimizeDeps.include'
+Failed to resolve dependency: [36mreact-dom[39m, present in client 'optimizeDeps.include'
+Failed to resolve dependency: [36mreact/jsx-dev-runtime[39m, present in client 'optimizeDeps.include'
+Failed to resolve dependency: [36mreact/jsx-runtime[39m, present in client 'optimizeDeps.include'
+[31m(!) Failed to run dependency scan. Skipping dependency pre-bundling. Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:440:11)
+    at Object.spawn (node:child_process:796:9)
+    at ensureServiceIsRunning (C:\Users\Dharu\Downloads\mathematics-club-web-application\node_modules\esbuild\lib\main.js:2268:29)
+    at Object.context (C:\Users\Dharu\Downloads\mathematics-club-web-application\node_modules\esbuild\lib\main.js:2167:33)
+    at prepareEsbuildScanner (file:///C:/Users/Dharu/Downloads/mathematics-club-web-application/node_modules/vite/dist/node/chunks/config.js:31458:23)
+    at async scan (file:///C:/Users/Dharu/Downloads/mathematics-club-web-application/node_modules/vite/dist/node/chunks/config.js:31384:14)
+    at async file:///C:/Users/Dharu/Downloads/mathematics-club-web-application/node_modules/vite/dist/node/chunks/config.js:34115:15[39m
